@@ -155,23 +155,81 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese el número del instrumento" required>
             </div>
             <div class="mb-3">
-                <label for="instrumento" class="form-label">Instrumento:</label>
-                <select name="instrumento" id="instrumento" class="form-select" required>
-                    <option value="">Seleccione un instrumento</option>
-                    <option value="Ordenanza">Ordenanza</option>
-                    <option value="Resolucion">Resolución</option>
-                    <option value="Declaracion">Declaración</option>
-                    <option value="Comunicacion">Comunicación</option>
+                <label for="descripcion" class="form-label">Titulo:</label>
+                <textarea name="descripcion" id="descripcion" class="form-control" placeholder="Ingrese una descripción (máximo 140 caracteres)" maxlength="140" required></textarea>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="tema" class="form-label">Tema</label>
+                <select name="tema" id="tema" class="form-select" required>
+                <option value="">Seleccione un Tema</option>
+                                    <option value="Acceso a la información pública">Acceso a la información pública</option>
+                                    <option value="Adultos mayores">Adultos mayores</option>
+                                    <option value="Agua potable">Agua potable</option>
+                                    <option value="Alumbrado">Alumbrado</option>
+                                    <option value="Animales">Animales</option>
+                                    <option value="Armas">Armas</option>
+                                    <option value="Calles">Calles</option>
+                                    <option value="Casinos">Casinos</option>
+                                    <option value="Cementerio">Cementerio</option>
+                                    <option value="Colectivos">Colectivos</option>
+                                    <option value="Comercios">Comercios</option>
+                                    <option value="Comisión investigadora">Comisión investigadora</option>
+                                    <option value="Cultura">Cultura</option>
+                                    <option value="Deportes">Deportes</option>
+                                    <option value="Desarrollo Social">Desarrollo Social</option>
+                                    <option value="Discapacidad">Discapacidad</option>
+                                    <option value="Diversidad sexual">Diversidad sexual</option>
+                                    <option value="Educacion y Cultura">Educacion y Cultura</option>
+                                    <option value="Espacio Público">Espacio Público</option>
+                                    <option value="Espacio verde y arbolado">Espacio verde y arbolado</option>
+                                    <option value="Estacionamiento Medido">Estacionamiento Medido</option>
+                                    <option value="Hábitat">Hábitat</option>
+                                    <option value="Hacienda y Finanzas">Hacienda y Finanzas</option>                    
+                                    <option value="Higiene y Sanidad">Higiene y Sanidad</option>
+                                    <option value="Hogar de ancianos">Hogar de ancianos</option>
+                                    <option value="Información Pública">Información Pública</option>
+                                    <option value="Iniciativa comunitaria, coop. de trabajo y vecinales">Iniciativa comunitaria, coop. de trabajo y vecinales</option>
+                                    <option value="Medio ambiente">Medio ambiente</option>
+                                    <option value="Niñez, adolescencia y familia">Niñez, adolescencia y familia</option>
+                                    <option value="Obras Privadas">Obras Privadas</option>
+                                    <option value="Obras Publicas">Obras Publicas</option>
+                                    <option value="Personal municipal">Personal municipal</option>
+                                    <option value="Producción">Producción</option>
+                                    <option value="Recursos Hidricos">Recursos Hidricos</option>
+                                    <option value="Reglamento de urbanizacion y subdivisiones">Reglamento de urbanizacion y subdivisiones</option>
+                                    <option value="Reglamento de zonificación">Reglamento de zonificación</option>
+                                    <option value="Relaciones públicas y ceremonial">Relaciones públicas y ceremonial</option>
+                                    <option value="Residuos">Residuos</option>
+                                    <option value="Salud">Salud</option>
+                                    <option value="Seguridad">Seguridad</option>
+                                    <option value="Sin tema">Sin tema</option>
+                                    <option value="Taxis y remises">Taxis y remises</option>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Transito y seguridad Vial">Transito y seguridad Vial</option>
+                                    <option value="Transporte">Transporte</option>
+                                    <option value="Turismo">Turismo</option>
                 </select>
             </div>
+
+            
             <div class="mb-3">
                 <label for="year" class="form-label">Año:</label>
                 <input type="text" name="year" id="year" class="form-control" placeholder="Ingrese el año" required>
             </div>
             <div class="mb-3">
-                <label for="descripcion" class="form-label">Descripción:</label>
-                <textarea name="descripcion" id="descripcion" class="form-control" placeholder="Ingrese una descripción (máximo 140 caracteres)" maxlength="140" required></textarea>
+                <label for="tema" class="form-label">Autor</label>
+                <select name="tema" id="tema" class="form-select" required>
+                <option value="">Seleccione un Tema</option>
+                <option value="">Seleccione un Autor</option>
+                                    <option value="Proyecto Concejal">Proyecto Concejal</option>
+                                    <option value="Peticion Particular">Petición Particular</option>
+                                    <option value="Petición del DEM">Petición del DEM</option>
+                                    <option value="Comunicacion Oficial">Comunicación Oficial</option>
+                </select>
             </div>
+            
             <div class="mb-3">
                 <label for="pdf_file" class="form-label">Archivo PDF:</label>
                 <input type="file" name="pdf_file" id="pdf_file" class="form-control" accept="application/pdf" required>
